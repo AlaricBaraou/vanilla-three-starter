@@ -11,15 +11,15 @@
     "eslint": "eslint --ext .js src"
   },
   "devDependencies": {
-    "eslint": "^8.53.0",
-    "eslint-plugin-import": "^2.29.0",
-    "vite": "^4.4.5",
-    "vite-plugin-glsl": "^1.1.2"
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "vite": "^4.5.3",
+    "vite-plugin-glsl": "^1.3.0"
   },
   "dependencies": {
-    "detect-gpu": "^5.0.37",
-    "lil-gui": "^0.19.1",
-    "stats-gl": "^2.0.1",
-    "three": "^0.159.0"
+    "detect-gpu": "^5.0.38",
+    "lil-gui": "^0.19.2",
+    "stats-gl": "^2.2.8",
+    "three": "^0.165.0"
   }
 }

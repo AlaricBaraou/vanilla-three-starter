@@ -9,6 +9,11 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  optimizeDeps:{
+    esbuildOptions:{
+      target: ['es2022', 'chrome90', 'firefox90', 'safari15'],
+    }
+  },
   server: {
     port: 4000,
   },

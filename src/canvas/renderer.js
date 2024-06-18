@@ -1,9 +1,8 @@
-import { WebGLRenderer } from 'three';
-
+import WebGPURenderer from 'three/addons/renderers/webgpu/WebGPURenderer.js';
 import { component } from '@/canvas/dispatcher';
 import settings from '@/canvas/settings';
 
-class Renderer extends component(WebGLRenderer) {
+class Renderer extends component(WebGPURenderer) {
   constructor() {
     super({
       powerPreference: 'high-performance',

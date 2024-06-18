@@ -6,8 +6,9 @@ import { component } from '@/canvas/dispatcher';
 import loader from '@/canvas/loader';
 import renderer from '@/canvas/renderer';
 import scene from '@/canvas/scene';
-import { Grid } from '@/canvas/meshes/Grid/Grid';
-import { Suzanne } from '@/canvas/meshes/Suzanne/Suzanne';
+import { SuzanneTSL } from '@/canvas/meshes/Suzanne/SuzanneTSL';
+import { GridTSL } from '@/canvas/meshes/Grid/GridTSL';
+import { GridTSLDebug } from './canvas/meshes/Grid/GridTSLDebug';
 // import postfx from '@/canvas/postfx/postfx';
 
 let stats = null;
@@ -43,8 +44,11 @@ class Site extends component(null, {
     }
   }
   onLoadEnd() {
-    new Grid()
-    new Suzanne()
+    // new Grid()
+    // new GridTSL()
+    new GridTSLDebug()
+    // new Suzanne()
+    new SuzanneTSL()
   }
 }
 
